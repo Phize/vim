@@ -1,0 +1,82 @@
+snippet     c1
+abbr        // ##########...
+prev_word   '^'
+            // ############################################################
+            // ${1:heading}
+            // ############################################################
+            ${2}
+snippet     c2
+abbr        // **********...
+prev_word   '^'
+            // **************************************************
+            // ${1:heading}
+            // **************************************************
+            ${2}
+snippet     c3
+abbr        // ==========...
+prev_word   '^'
+            // ========================================
+            // ${1:heading}
+            // ========================================
+            ${2}
+snippet     c4
+abbr        // ----------...
+prev_word   '^'
+            // ------------------------------
+            // ${1:heading}
+            // ------------------------------
+            ${2}
+snippet     c5
+abbr        // ^^^^^^^^^^...
+prev_word   '^'
+            // ^^^^^^^^^^^^^^^^^^^^
+            // ${1:heading}
+            // ^^^^^^^^^^^^^^^^^^^^
+            ${2}
+snippet     c6
+abbr        // """"""""""...
+prev_word   '^'
+            // """"""""""
+            // ${1:heading}
+            // """"""""""
+            ${2}
+snippet     @extend
+            @extend ${1};
+snippet     @debug
+            @debug ${1};
+snippet     @warn
+            @warn "${1}";
+snippet     @if
+            @if ${1} {
+                ${2}
+            }
+snippet     @else
+            @else {
+                ${1}
+            }
+snippet     @else if
+            @else if ${1} {
+                ${2}
+            }
+snippet     @for
+            @for ${1} from ${2} through ${3} {
+                ${4}
+            }
+snippet     @each
+            @each ${1} in ${2} {
+                ${3}
+            }
+snippet     @while
+            @while ${1} {
+                ${2}
+            }
+snippet     @mixin
+            @mixin ${1} {
+                ${2}
+            }
+snippet     @include
+            @include ${1};
+snippet     @function
+            @function ${1} {
+                ${2}
+            }

@@ -448,7 +448,7 @@ else
     set showbreak=>\ 
 endif
 
-" " カーソル行のテキストをコンシール表示するモード。
+" カーソル行のテキストをコンシール表示するモード。
 set concealcursor=nc    " ノーマルモード、コマンドライン編集でコンシール表示。
 
 " コンシール構文属性のテキストの表示方法。
@@ -1878,8 +1878,8 @@ nnoremap <silent> [-unite-]/ :<C-u>Unite -buffer-name=line -start-insert line<CR
 
 " カーソル位置の単語でバッファーを行検索。
 function! s:smartSearch()
-  let @/ = expand('<cword>')
-  UniteWithCursorWord -buffer-name=line line
+    let @/ = expand('<cword>')
+    UniteWithCursorWord -buffer-name=line line
 endfunction
 nnoremap <silent> [-unite-]? :<C-u>call <SID>smartSearch()<CR>
 

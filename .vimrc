@@ -1578,20 +1578,31 @@ let g:ConqueTerm_SendFileKey      = '<Leader>%>'    " ファイルの全ての�
 let g:ConqueTerm_SendVisKey       = '<Leader>%>'    " 選択文字列をConqueバッファーに送信するキー。
 " let g:ConqueTerm_SendFunctionKeys = 1               " ファンクションキーのキーイベントを端末に送信。
 
-" Bashを起動。
-nnoremap <silent> <Leader>%% :<C-u>call conque_term#open('bash', ['split'])<CR>
+if s:is_win
+    " Bashを起動。
+    nnoremap <silent> <Leader>%% :<C-u>call conque_term#open('bash -i', ['split'])<CR>
+
+    " Pythonを起動。
+    nnoremap <silent> <Leader>%py :<C-u>call conque_term#open('python -i', ['split'])<CR>
+
+    " Irbを起動。
+    nnoremap <silent> <Leader>%rb :<C-u>call conque_term#open('irb --inf-ruby-mode', ['split'])<CR>
+else
+    " Bashを起動。
+    nnoremap <silent> <Leader>%% :<C-u>call conque_term#open('bash', ['split'])<CR>
+
+    " Pythonを起動。
+    nnoremap <silent> <Leader>%py :<C-u>call conque_term#open('python', ['split'])<CR>
+
+    " Irbを起動。
+    nnoremap <silent> <Leader>%rb :<C-u>call conque_term#open('irb', ['split'])<CR>
+endif
 
 " PHPを起動。
 nnoremap <silent> <Leader>%ph :<C-u>call conque_term#open('php -a', ['split'])<CR>
 
 " Perlを起動。
 nnoremap <silent> <Leader>%pe :<C-u>call conque_term#open('perlsh', ['split'])<CR>
-
-" Pythonを起動。
-nnoremap <silent> <Leader>%py :<C-u>call conque_term#open('python', ['split'])<CR>
-
-" Irbを起動。
-nnoremap <silent> <Leader>%rb :<C-u>call conque_term#open('irb', ['split'])<CR>
 " }}}
 
 " **************************************************

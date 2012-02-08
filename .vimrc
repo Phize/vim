@@ -1550,6 +1550,12 @@ let g:vimshell_user_prompt = 'getcwd()'
 " ウィンドウをポップアップ。
 nnoremap <silent> <Leader>$$ :<C-u>VimShellPop<CR>
 
+" PHPを起動。
+nnoremap <silent> <Leader>$ph :<C-u>VimShellInteractive php<CR>
+
+" Perlを起動。
+nnoremap <silent> <Leader>$pe :<C-u>VimShellInteractive perlsh<CR>
+
 " Pythonを起動。
 nnoremap <silent> <Leader>$py :<C-u>VimShellInteractive python<CR>
 

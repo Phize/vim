@@ -897,6 +897,10 @@ nnoremap <silent> [-ex-]lw  :<C-u>lwindow<CR>
 nnoremap <silent> [-ex-]mak  :<C-u>make<CR>
 nnoremap <silent> [-ex-]lmak :<C-u>lmake<CR>
 
+" 差分モード。
+nnoremap <silent> d< do
+nnoremap <silent> d> dp
+
 " grep。
 " TODO、FIXME、XXXを検索。
 nnoremap <silent> [-ex-]gt :<C-u>vimgrep /\<todo\>\\|\<fixme\>\\|\<xxx\>\c/j %<CR>

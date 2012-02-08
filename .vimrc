@@ -2054,6 +2054,59 @@ command! -bang -bar -nargs=1 MakeWith  call s:makeWith('make<bang>', <f-args>)
 
 " コンパイラーを一時的に変更して`:lmake`。
 command! -bang -bar -nargs=1 LMakeWith call s:makeWith('lmake<bang>', <f-args>)
+
+" 差分モードから抜けたときに設定を元に戻すために設定を保存。
+autocmd vimrc_autocmd BufWinEnter *
+            \ if !&l:diff && !exists('b:undo_diff') |
+                \ let b:undo_diff = 'setlocal ' .
+                    \ 'nodiff ' .
+                    \ (&scrollbind ? 'scrollbind' : 'noscrollbind') . ' ' .
+                    \ (&cursorbind ? 'cursorbind' : 'nocursorbind') . ' ' .
+                    \ 'scrollopt=' . &scrollopt  . ' ' .
+                    \ (&wrap ? 'wrap' : 'nowrap') . ' ' .
+                    \ 'foldmethod=' . &foldmethod . ' ' .
+                    \ 'foldcolumn=' . &foldcolumn |
+            \ endif
+
+" 'filename'が存在するファイルのときは'filename'との差分を表示。
+" 'filename'が空のときは現在のバッファーの差分を表示。
+function! s:smartDiff(filename)
+    if a:filename != '' && !filereadable(a:filename)
+        return
+    endif
+
+    if a:filename == ''
+        vertical new
+        setlocal buftype=nofile
+        read #
+        0d_
+        diffthis
+        wincmd p
+        diffthis
+    else
+        execute 'vertical diffsplit ' . a:filename
+    endif
+endfunction
+
+" ウィンドウを垂直分割して差分モードに移行。
+command! -nargs=? -complete=file VDiff call s:smartDiff('<args>')
+
+" 設定を元に戻して差分モードから抜ける。
+function! s:unDiff()
+    if exists('b:undo_diff')
+        execute b:undo_diff
+    else
+        execute 'setlocal ' .
+                    \ 'nodiff ' .
+                    \ 'scrollbind< ' .
+                    \ 'cursorbind< ' .
+                    \ 'scrollopt< ' .
+                    \ 'wrap< ' .
+                    \ 'foldmethod< ' .
+                    \ 'foldcolumn<'
+    endif
+endfunction
+command! -nargs=0 Undiff call s:unDiff()
 " }}}
 
 

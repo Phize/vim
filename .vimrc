@@ -2092,7 +2092,7 @@ endfunction
 command! -nargs=? -complete=file VDiff call s:smartDiff('<args>')
 
 " 設定を元に戻して差分モードから抜ける。
-function! s:unDiff()
+function! s:undiff()
     if exists('b:undo_diff')
         execute b:undo_diff
     else
@@ -2106,7 +2106,7 @@ function! s:unDiff()
                     \ 'foldcolumn<'
     endif
 endfunction
-command! -nargs=0 Undiff call s:unDiff()
+command! -nargs=0 Undiff call s:undiff()
 " }}}
 
 

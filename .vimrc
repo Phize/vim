@@ -2118,7 +2118,7 @@ command! -nargs=0 Undiff call s:undiff()
 function! s:toggleOption(option_name)
     execute 'setlocal' a:option_name . '!'
     execute 'setlocal' a:option_name . '?'
-endfunction  "}}}
+endfunction
 
 " 選択したテキストを取得。
 function! s:getSelectedText()

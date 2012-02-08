@@ -1581,6 +1581,12 @@ let g:ConqueTerm_SendVisKey       = '<Leader>%>'    " 選択文字列をConque�
 " Bashを起動。
 nnoremap <silent> <Leader>%% :<C-u>call conque_term#open('bash', ['split'])<CR>
 
+" PHPを起動。
+nnoremap <silent> <Leader>%ph :<C-u>call conque_term#open('php -a', ['split'])<CR>
+
+" Perlを起動。
+nnoremap <silent> <Leader>%pe :<C-u>call conque_term#open('perlsh', ['split'])<CR>
+
 " Pythonを起動。
 nnoremap <silent> <Leader>%py :<C-u>call conque_term#open('python', ['split'])<CR>
 

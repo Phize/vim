@@ -2032,7 +2032,7 @@ map [-op-]H <Plug>(operator-html-unescape)
 " ############################################################
 " コマンド {{{
 " ############################################################
-" コンパイラーを一時的に変更して`:make`、`:lmake`。
+" コンパイラーを一時的に変更して`:command`を実行。
 function! s:makeWith(command, compiler)
     if exists('g:current_compiler')
         let _current_compiler = g:current_compiler
@@ -2048,7 +2048,11 @@ function! s:makeWith(command, compiler)
         unlet g:current_compiler
     endif
 endfunction
+
+" コンパイラーを一時的に変更して`:make`。
 command! -bang -bar -nargs=1 MakeWith  call s:makeWith('make<bang>', <f-args>)
+
+" コンパイラーを一時的に変更して`:lmake`。
 command! -bang -bar -nargs=1 LMakeWith call s:makeWith('lmake<bang>', <f-args>)
 " }}}
 

@@ -52,54 +52,55 @@ call neobundle#rc(expand('$HOME/.bundle'))      " NeoBundleを初期化。
 " **************************************************
 " プラグイン {{{
 " **************************************************
-NeoBundle 'Shougo/neobundle.vim'                " NeoBundle                : パッケージマネージャー。
-NeoBundle 'vim-jp/vimdoc-ja'                    " vimdoc-ja                : 日本語のヘルプファイル。
-NeoBundle 'Shougo/vimproc'                      " VimProc                  : 非同期実行ライブラリ。
-NeoBundle 'Shougo/neocomplcache'                " NeoComplCache            : キーワード補完。
-NeoBundle 'savevers.vim'                        " Savevers                 : ファイルの世代管理・差分表示。
-NeoBundle 'kana/vim-submode'                    " Submode                  : Vimモードにサブモードを定義。
-NeoBundle 'YankRing.vim'                        " YankRing                 : ヤンク、削除テキストの管理。
-NeoBundle 'matchit.zip'                         " Matchit                  : 括弧等の組を構成する文字を拡張。
-NeoBundle 'tpope/vim-surround'                  " Surround                 : 括弧等の組を構成する文字の削除・変更・追加。
-NeoBundle 'tpope/vim-repeat'                    " Repeat                   : プラグインの関数を繰り返しコマンドに対応させる。
-NeoBundle 'Raimondi/delimitMate'                " DelimitMate              : 括弧等の組を構成する文字を自動で閉じる。
-NeoBundle 'chrisbra/SudoEdit.vim'               " SudoEdit                 : sudoやsu等を利用してファイルを読み書き。
-NeoBundle 'godlygeek/csapprox'                  " CSApprox                 : GVim専用のカラースキームを端末用に変換。
-NeoBundle 'Gundo'                               " Gundo                    : アンドゥツリーをグラフ表示。
-NeoBundle 'netrw.vim'                           " Netrw                    : ファイルエクスプローラー(ファイラー)。
-NeoBundle 'Shougo/vimfiler'                     " VimFiler                 : ファイルエクスプローラー(ファイラー)。
-NeoBundle 'scrooloose/nerdtree'                 " NERD tree                : ツリー形式のファイルエクスプローラー。
-NeoBundle 'The-NERD-Commenter'                  " NERD Commenter           : コメントの操作・整形。
-NeoBundle 'majutsushi/tagbar'                   " Tagbar                   : ソースコードのタグを一覧表示。
-NeoBundle 'Lokaltog/vim-powerline'              " Powerline                : ステータスラインの外観・機能を拡張。
-NeoBundle 'h1mesuke/vim-alignta'                " Align Them All!          : テキストを整列。
-NeoBundle 'Lokaltog/vim-easymotion'             " EasyMotion               : モーションの使用を容易にする。
-NeoBundle 'kien/tabman.vim'                     " TabMan                   : タブとウィンドウを管理。
-NeoBundle 'kana/vim-altr'                       " Altr                     : 定義したルールを元にファイルを切り替える。
-NeoBundle 'scrooloose/syntastic'                " Syntastic                : シンタックスチェック。
-NeoBundle 'nathanaelkane/vim-indent-guides'     " Indent Guides            : インデントの深さを可視化。
-NeoBundle 'jceb/vim-hier'                       " Hier                     : QuickFixリスト・ローケーションリストのエラーを強調表示。
-NeoBundle 'Shougo/vimshell'                     " VimShell                 : シェル。
-NeoBundle 'rson/vim-conque'                     " Conque                   : ターミナルエミュレーター。
-NeoBundle 'tpope/vim-git'                       " Git                      : Gitのシンタックスハイライト・インデントファイル・ファイルタイププラグイン。
-NeoBundle 'tpope/vim-fugitive'                  " Fugitive                 : Gitラッパー。
-NeoBundle 'mattn/gist-vim'                      " Gist                     : Gistを作成・管理。
-NeoBundle 'QFixToggle'                          " QFixToggle               : QuickFixウィンドウの表示をトグル。
-NeoBundle 'thinca/vim-qfreplace'                " Qfreplace                : クリックフィックスリスト内のテキストを置換。
-NeoBundle 'othree/eregex.vim'                   " Eregex                   : 拡張正規表現をVimの正規方言に変換。
-" NeoBundle 'kana/vim-arpeggio'                   " Arpeggio               : [動かない] キーマッピングでキーの同時押しをシミュレート。
-NeoBundle 'mattn/zencoding-vim'                 " ZenCoding                : Zen Codingプラグイン。
-NeoBundle 'ujihisa/quickrun'                    " QuickRun                 : 編集中のファイルの全体または一部を実行。
-NeoBundle 'PDV--phpDocumentor-for-Vim'          " PDV                      : phpDocument形式のDocBlockコメントを生成。
-" NeoBundle 'hallettj/jslint.vim'                 " JSLint                 : [重い] JavaScript LintをVimに統合。
-NeoBundle 'DrawIt'                              " DrawIt                   : テキストで図を描画。
-NeoBundle 'Rykka/ColorV'                        " ColorV                   : 色を選択・取得・編集・一覧表示。
-NeoBundle 'tsukkee/lingr-vim.git'               " Lingr                    : Lingrクライアント。
-" NeoBundle 'ChrisYip/Better-CSS-Syntax-for-Vim'  " Better CSS Syntax for Vim: [他のプラグインと衝突] CSS2、HTML5、CSS3のシンタックスハイライト。
-NeoBundle 'hail2u/vim-css3-syntax'              " vim-css3-syntax          : CSS3のシンタックスハイライト。
-NeoBundle 'cakebaker/scss-syntax.vim'           " scss-syntax              : SCSSのシンタックスハイライト。
-NeoBundle 'Phize/vim-rainbow_pairs'             " Rainbow Pairs            : 括弧等の組を構成する文字を強調表示。
-NeoBundle 'Phize/foldCC'                        " FoldCC                   : 折り畳みの表示テキスト等で使用する関数。
+NeoBundle 'Shougo/neobundle.vim'                    " NeoBundle                      : パッケージマネージャー。
+NeoBundle 'vim-jp/vimdoc-ja'                        " vimdoc-ja                      : 日本語のヘルプファイル。
+NeoBundle 'Shougo/vimproc'                          " VimProc                        : 非同期実行ライブラリ。
+NeoBundle 'Shougo/neocomplcache'                    " NeoComplCache                  : キーワード補完。
+NeoBundle 'Shougo/neocomplcache-snippets-complete'  " neocomplcache-snippets-complete: スニペット補完(NeoComplCacheソース)。
+NeoBundle 'savevers.vim'                            " Savevers                       : ファイルの世代管理・差分表示。
+NeoBundle 'kana/vim-submode'                        " Submode                        : Vimモードにサブモードを定義。
+NeoBundle 'YankRing.vim'                            " YankRing                       : ヤンク、削除テキストの管理。
+NeoBundle 'matchit.zip'                             " Matchit                        : 括弧等の組を構成する文字を拡張。
+NeoBundle 'tpope/vim-surround'                      " Surround                       : 括弧等の組を構成する文字の削除・変更・追加。
+NeoBundle 'tpope/vim-repeat'                        " Repeat                         : プラグインの関数を繰り返しコマンドに対応させる。
+NeoBundle 'Raimondi/delimitMate'                    " DelimitMate                    : 括弧等の組を構成する文字を自動で閉じる。
+NeoBundle 'chrisbra/SudoEdit.vim'                   " SudoEdit                       : sudoやsu等を利用してファイルを読み書き。
+NeoBundle 'godlygeek/csapprox'                      " CSApprox                       : GVim専用のカラースキームを端末用に変換。
+NeoBundle 'Gundo'                                   " Gundo                          : アンドゥツリーをグラフ表示。
+NeoBundle 'netrw.vim'                               " Netrw                          : ファイルエクスプローラー(ファイラー)。
+NeoBundle 'Shougo/vimfiler'                         " VimFiler                       : ファイルエクスプローラー(ファイラー)。
+NeoBundle 'scrooloose/nerdtree'                     " NERD tree                      : ツリー形式のファイルエクスプローラー。
+NeoBundle 'The-NERD-Commenter'                      " NERD Commenter                 : コメントの操作・整形。
+NeoBundle 'majutsushi/tagbar'                       " Tagbar                         : ソースコードのタグを一覧表示。
+NeoBundle 'Lokaltog/vim-powerline'                  " Powerline                      : ステータスラインの外観・機能を拡張。
+NeoBundle 'h1mesuke/vim-alignta'                    " Align Them All!                : テキストを整列。
+NeoBundle 'Lokaltog/vim-easymotion'                 " EasyMotion                     : モーションの使用を容易にする。
+NeoBundle 'kien/tabman.vim'                         " TabMan                         : タブとウィンドウを管理。
+NeoBundle 'kana/vim-altr'                           " Altr                           : 定義したルールを元にファイルを切り替える。
+NeoBundle 'scrooloose/syntastic'                    " Syntastic                      : シンタックスチェック。
+NeoBundle 'nathanaelkane/vim-indent-guides'         " Indent Guides                  : インデントの深さを可視化。
+NeoBundle 'jceb/vim-hier'                           " Hier                           : QuickFixリスト・ローケーションリストのエラーを強調表示。
+NeoBundle 'Shougo/vimshell'                         " VimShell                       : シェル。
+NeoBundle 'rson/vim-conque'                         " Conque                         : ターミナルエミュレーター。
+NeoBundle 'tpope/vim-git'                           " Git                            : Gitのシンタックスハイライト・インデントファイル・ファイルタイププラグイン。
+NeoBundle 'tpope/vim-fugitive'                      " Fugitive                       : Gitラッパー。
+NeoBundle 'mattn/gist-vim'                          " Gist                           : Gistを作成・管理。
+NeoBundle 'QFixToggle'                              " QFixToggle                     : QuickFixウィンドウの表示をトグル。
+NeoBundle 'thinca/vim-qfreplace'                    " Qfreplace                      : クリックフィックスリスト内のテキストを置換。
+NeoBundle 'othree/eregex.vim'                       " Eregex                         : 拡張正規表現をVimの正規方言に変換。
+" NeoBundle 'kana/vim-arpeggio'                   " Arpeggio                           : [動かない] キーマッピングでキーの同時押しをシミュレート。
+NeoBundle 'mattn/zencoding-vim'                     " ZenCoding                      : Zen Codingプラグイン。
+NeoBundle 'ujihisa/quickrun'                        " QuickRun                       : 編集中のファイルの全体または一部を実行。
+NeoBundle 'PDV--phpDocumentor-for-Vim'              " PDV                            : phpDocument形式のDocBlockコメントを生成。
+" NeoBundle 'hallettj/jslint.vim'                 " JSLint                             : [重い] JavaScript LintをVimに統合。
+NeoBundle 'DrawIt'                                  " DrawIt                         : テキストで図を描画。
+NeoBundle 'Rykka/ColorV'                            " ColorV                         : 色を選択・取得・編集・一覧表示。
+NeoBundle 'tsukkee/lingr-vim.git'                   " Lingr                          : Lingrクライアント。
+" NeoBundle 'ChrisYip/Better-CSS-Syntax-for-Vim'  " Better CSS Syntax for Vim          : [他のプラグインと衝突] CSS2、HTML5、CSS3のシンタックスハイライト。
+NeoBundle 'hail2u/vim-css3-syntax'                  " vim-css3-syntax                : CSS3のシンタックスハイライト。
+NeoBundle 'cakebaker/scss-syntax.vim'               " scss-syntax                    : SCSSのシンタックスハイライト。
+NeoBundle 'Phize/vim-rainbow_pairs'                 " Rainbow Pairs                  : 括弧等の組を構成する文字を強調表示。
+NeoBundle 'Phize/foldCC'                            " FoldCC                         : 折り畳みの表示テキスト等で使用する関数。
 
 
 

@@ -840,7 +840,7 @@ nnoremap <silent> ZZ <Nop>
 nnoremap <silent> zi zMzv
 
 " 検索ハイライトを無効化。
-nnoremap <silent> <Esc><Esc> :<C-u>set nohlsearch<CR>
+nnoremap <silent> <Esc><Esc> :<C-u>nohlsearch<CR>
 
 " バッファー。
 nnoremap <silent> [-ex-]bn :<C-u>bnext<CR>

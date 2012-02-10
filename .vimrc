@@ -113,6 +113,7 @@ NeoBundle 'tacroe/unite-mark'           " unite-mark       : マークを一覧�
 NeoBundle 'ujihisa/unite-colorscheme'   " unite-colorscheme: カラースキームを一覧表示(Uniteソース)。
 " NeoBundle 'Shougo/unite-build'          " unite-build      : ビルド結果を一覧表示(Uniteソース)。
 NeoBundle 'tsukkee/unite-help'          " unite-help       : ヘルプを一覧表示(Uniteソース)。
+NeoBundle 'thinca/vim-unite-history'    " vim-unite-history: コマンドと検索の履歴を一覧表示(Uniteソース)。
 " }}}
 
 " ========================================
@@ -1931,6 +1932,12 @@ nnoremap <silent> [-unite-]c :<C-u>Unite -buffer-name=colorscheme colorscheme<CR
 
 " ヘルプを検索(unite-help)。
 nnoremap <silent> [-unite-]H :<C-u>Unite -buffer-name=help -start-insert help<CR>
+
+" コマンド履歴一覧(unite-history)。
+nnoremap <silent> [-unite-]h: :<C-u>Unite -buffer-name=command history/command<CR>
+
+" 検索履歴一覧(unite-history)。
+nnoremap <silent> [-unite-]h/ :<C-u>Unite -buffer-name=search history/search<CR>
 " }}}
 
 " **************************************************

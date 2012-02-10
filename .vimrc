@@ -1859,7 +1859,9 @@ nmap [-option-]p <Plug>(rainbow_pairs_toggle)
 noremap [-unite-] <Nop>
 map     <C-\>     [-unite-]
 
-let g:unite_enable_start_insert = 0 " 通常モードで開始。
+let g:unite_enable_start_insert        = 0      " 通常モードで開始。
+let g:unite_source_history_yank_enable = 1      " unite-source-history/yankを有効化。
+let g:unite_source_history_yank_limit  = 1000   " ヤンク履歴を保存する最大数。
 
 " `X`でアクションを選択。
 autocmd vimrc_autocmd FileType unite
@@ -1884,6 +1886,9 @@ nnoremap <silent> [-unite-]. :<C-u>UniteWithBufferDir -buffer-name=file file<CR>
 
 " レジスタ一覧。
 nnoremap <silent> [-unite-]@ :<C-u>Unite -buffer-name=register register<CR>
+
+" ヤンクの履歴一覧。
+nnoremap <silent> [-unite-]hy :<C-u>Unite -buffer-name=yank history/yank<CR>
 
 " スニペット一覧。
 nnoremap <silent> [-unite-]s :<C-u>Unite -buffer-name=snippet snippet<CR>

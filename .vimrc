@@ -113,6 +113,7 @@ NeoBundle 'tacroe/unite-mark'           " unite-mark       : マークを一覧�
 NeoBundle 'ujihisa/unite-colorscheme'   " unite-colorscheme: カラースキームを一覧表示(Uniteソース)。
 " NeoBundle 'Shougo/unite-build'          " unite-build      : ビルド結果を一覧表示(Uniteソース)。
 NeoBundle 'tsukkee/unite-help'          " unite-help       : ヘルプを一覧表示(Uniteソース)。
+NeoBundle 'tsukkee/unite-tag'           " unite-tag        : タグを一覧表示(Uniteソース)。
 NeoBundle 'thinca/vim-unite-history'    " vim-unite-history: コマンドと検索の履歴を一覧表示(Uniteソース)。
 " }}}
 
@@ -1940,6 +1941,15 @@ nnoremap <silent> [-unite-]c :<C-u>Unite -buffer-name=colorscheme colorscheme<CR
 
 " ヘルプを検索(unite-help)。
 nnoremap <silent> [-unite-]H :<C-u>Unite -buffer-name=help -start-insert help<CR>
+
+" タグ一覧(unite-tag)。
+nnoremap <silent> [-unite-]]] :<C-u>Unite -buffer-name=tag tag<CR>
+
+" タグを含むファイル一覧(unite-tag)。
+nnoremap <silent> [-unite-]]? :<C-u>Unite -buffer-name=tag/file tag/file<CR>
+
+" インクルードしているファイルのタグ一覧(unite-tag)。
+nnoremap <silent> [-unite-]]} :<C-u>Unite -buffer-name=tag/include tag/include<CR>
 
 " コマンド履歴一覧(unite-history)。
 nnoremap <silent> [-unite-]h: :<C-u>Unite -buffer-name=command history/command<CR>

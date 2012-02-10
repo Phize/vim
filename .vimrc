@@ -112,9 +112,7 @@ NeoBundle 'h1mesuke/unite-outline'      " unite-outline    : 見出しを一覧�
 NeoBundle 'tacroe/unite-mark'           " unite-mark       : マークを一覧表示(Uniteソース)。
 NeoBundle 'ujihisa/unite-colorscheme'   " unite-colorscheme: カラースキームを一覧表示(Uniteソース)。
 " NeoBundle 'Shougo/unite-build'          " unite-build      : ビルド結果を一覧表示(Uniteソース)。
-" NeoBundle 'tsukkee/unite-help'          " unite-help       : [フリーズする] ヘルプを一覧表示(Uniteソース)。
-" NeoBundle 'tsukkee/unite-tag'           " unite-tag        : [動かない] タグを一覧表示(Uniteソース)。
-" NeoBundle 'tsukkee/unite-history'       " unite-history    : [Uniteに一部組み込み済?] 各種履歴を一覧表示(Uniteソース)。
+NeoBundle 'tsukkee/unite-help'          " unite-help       : ヘルプを一覧表示(Uniteソース)。
 " }}}
 
 " ========================================
@@ -1930,6 +1928,9 @@ nnoremap <silent> [-unite-]' :<C-u>Unite -buffer-name=mark mark<CR>
 
 " カラースキーム一覧(unite-colorscheme)。
 nnoremap <silent> [-unite-]c :<C-u>Unite -buffer-name=colorscheme colorscheme<CR>
+
+" ヘルプを検索(unite-help)。
+nnoremap <silent> [-unite-]H :<C-u>Unite -buffer-name=help -start-insert help<CR>
 " }}}
 
 " **************************************************

@@ -1421,8 +1421,8 @@ endfunction
 
 " コメント文字列で整列。
 autocmd vimrc_autocmd BufEnter *
-            \ execute 'nnoremap <silent> <Leader>a/ :<C-u>Alignta v/^\s*' . s:getCommentStringPattern() .  ' <-- -r ' . s:getCommentStringPattern() . '<CR>' |
-            \ execute 'vnoremap <silent> <Leader>a/ :Alignta v/^\s*'      . s:getCommentStringPattern() .  ' <-- -r ' . s:getCommentStringPattern() . '<CR>'
+            \ execute 'nnoremap <silent> <Leader>a/ :<C-u>Alignta v/^\\s*' . s:getCommentStringPattern() .  ' <-- -r ' . s:getCommentStringPattern() . '<CR>' |
+            \ execute 'vnoremap <silent> <Leader>a/ :Alignta v/^\\s*'      . s:getCommentStringPattern() .  ' <-- -r ' . s:getCommentStringPattern() . '<CR>'
 " }}}
 
 " **************************************************

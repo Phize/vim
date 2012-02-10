@@ -1860,6 +1860,7 @@ noremap [-unite-] <Nop>
 map     <C-\>     [-unite-]
 
 let g:unite_enable_start_insert        = 0      " 通常モードで開始。
+let g:unite_source_file_mru_limit      = 1000   " 最近使用したファイルの最大保存数。
 let g:unite_source_history_yank_enable = 1      " unite-source-history/yankを有効化。
 let g:unite_source_history_yank_limit  = 1000   " ヤンク履歴を保存する最大数。
 

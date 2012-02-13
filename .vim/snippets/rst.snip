@@ -77,42 +77,36 @@ prev_word   '^'
 # **************************************************
 snippet     index role
 abbr        索引 (ロール) | :index:`index`
-prev_word   '^'
             :index:\`${1:index}\`${2}
 # **************************************************
 # ロール (単体)
 # **************************************************
 snippet     index role single
 abbr        索引 (ロール; 単体) | :index:`text <single: index>`
-prev_word   '^'
             :index:\`${1:text} <single: ${2:index}>\`${3}
 # **************************************************
 # ロール (ペア)
 # **************************************************
 snippet     index role pair
 abbr        索引 (ロール; ペア) | :index:`text <pair: index1; index2>`
-prev_word   '^'
             :index:\`${1:text} <pair: ${2:index1}; ${3:index2}>\`${4}
 # **************************************************
 # ロール (トリプル)
 # **************************************************
 snippet     index role triple
 abbr        索引 (ロール; トリプル) | :index:`text <triple: index1; index2; index3>`
-prev_word   '^'
             :index:\`${1:text} <triple: ${2:index1}; ${3:index2}; ${4:index3}>\`${5}
 # **************************************************
 # ロール (参照; seealso)
 # **************************************************
 snippet     index role seealso
 abbr        索引 (ロール; seealso) | :index:`text <seealso: index; seealso>`
-prev_word   '^'
             :index:\`${1:text} <seealso: ${2:index}; ${3:seealso}>\`${4}
 # **************************************************
 # ロール (参照; see)
 # **************************************************
 snippet     index role see
 abbr        索引 (ロール; see) | :index:`text <see: index; see>`
-prev_word   '^'
             :index:\`${1:text} <seealso: ${2:index}; ${3:see}>\`${4}
 
 # ############################################################
@@ -169,6 +163,7 @@ prev_word   '^'
 # **************************************************
 snippet     literal
 abbr        リテラルブロック | ::
+prev_word   '^'
             ::
 
             ${1:code}
@@ -177,6 +172,7 @@ abbr        リテラルブロック | ::
 # **************************************************
 snippet     highlight
 abbr        ハイライト | .. highlight:: language
+prev_word   '^'
             .. highlight:: ${1:language}
                ${2}
 # **************************************************
@@ -184,6 +180,7 @@ abbr        ハイライト | .. highlight:: language
 # **************************************************
 snippet     codeblock
 abbr        コードブロック | .. code-block:: language
+prev_word   '^'
             .. code-block:: ${1:language}
 
                ${2:code}
@@ -196,6 +193,7 @@ abbr        コードブロック | .. code-block:: language
 # **************************************************
 snippet     table grid
 abbr        テーブル (グリッドテーブル)
+prev_word   '^'
             +--+
             |${1:th}|
             +==+
@@ -206,6 +204,7 @@ abbr        テーブル (グリッドテーブル)
 # **************************************************
 snippet     table simple
 abbr        テーブル (シンプルテーブル)
+prev_word   '^'
             ==
             ${1:th}
             ==
@@ -308,6 +307,7 @@ abbr        脚注 (参照) | [#name]_
 # **************************************************
 snippet     blockquote
 abbr        引用 (ブロックレベル)
+prev_word   '^'
             ${1:text}
             -- ${2:attribution text}
 

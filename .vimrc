@@ -158,6 +158,7 @@ NeoBundle 'desert256.vim'                       " Desert(256色端末専用)
 NeoBundle 'fugalh/desert.vim'                   " Desert(GUI版/8色端末)
 NeoBundle 'jnurmine/Zenburn'                    " Zenburn(GUI版/256色端末)
 NeoBundle 'altercation/vim-colors-solarized'    " Solarized(GUI版/256色端末/16色端末)
+NeoBundle 'noahfrederick/Hemisu'                " Hemisu(GUI版/256食端末)
 NeoBundle 'ChrisKempson/Vim-Tomorrow-Theme'     " Tomorrow Theme(GUI版/256色端末)
 NeoBundle 'twilight'                            " [GUI版専用] Twilight
 " }}}

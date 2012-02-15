@@ -1896,7 +1896,22 @@ nnoremap <silent> [-unite-]@ :<C-u>Unite -buffer-name=register register<CR>
 nnoremap <silent> [-unite-]hy :<C-u>Unite -buffer-name=yank history/yank<CR>
 
 " スニペット一覧。
-nnoremap <silent> [-unite-]s :<C-u>Unite -buffer-name=snippet snippet<CR>
+nnoremap <silent> [-unite-]S :<C-u>Unite -buffer-name=snippet snippet<CR>
+
+" セッション一覧。
+nnoremap <silent> [-unite-]s? :<C-u>Unite -buffer-name=session session<CR>
+
+" セッションを保存。
+nnoremap <silent> [-unite-]ss :<C-u>UniteSessionSave<CR>
+
+" セッションを読み込み。
+nnoremap <silent> [-unite-]sl :<C-u>UniteSessionLoad<CR>
+
+" セッションを名前を指定して読み込み。
+nnoremap [-unite-]sL :<C-u>UniteSessionLoad 
+
+" セッションを名前を付けて保存。
+nnoremap [-unite-]sS :<C-u>UniteSessionSave 
 
 " 最近使用したファイル一覧。
 nnoremap <silent> [-unite-]m :<C-u>Unite -buffer-name=file file_mru<CR>

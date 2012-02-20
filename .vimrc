@@ -959,6 +959,11 @@ if !s:is_gui
     nnoremap <silent> [-option-]b :<C-u>call <SID>toggleBackground()<CR>
 endif
 
+" 挿入モードで行を'shiftwidth'分ずらす。
+" 通常の`<C-o>>>`、`<C-o><<`が遅いため上書き。
+inoremap <C-o>>> <C-t>
+inoremap <C-o><< <C-d>
+
 " 挿入モード補完のポップアップメニューが表示されているときは候補を選択。
 " ポップアップメニューが表示されていないときは'<Tab>'を挿入。
 inoremap <silent><expr> <Tab> pumvisible() ? '<C-n>' : '<Tab>'

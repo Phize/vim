@@ -85,7 +85,7 @@ NeoBundle 'rson/vim-conque'                         " Conque                    
 NeoBundle 'tpope/vim-git'                           " Git                            : Gitのシンタックスハイライト・インデントファイル・ファイルタイププラグイン。
 NeoBundle 'tpope/vim-fugitive'                      " Fugitive                       : Gitラッパー。
 NeoBundle 'mattn/gist-vim'                          " Gist                           : Gistを作成・管理。
-NeoBundle 'QFixToggle'                              " QFixToggle                     : QuickFixウィンドウの表示をトグル。
+NeoBundle 'Phize/QFixToggle'                        " QFixToggle                     : QuickFixウィンドウの表示をトグル。
 NeoBundle 'thinca/vim-qfreplace'                    " Qfreplace                      : クリックフィックスリスト内のテキストを置換。
 NeoBundle 'othree/eregex.vim'                       " Eregex                         : 拡張正規表現をVimの正規方言に変換。
 " NeoBundle 'kana/vim-arpeggio'                   " Arpeggio                           : [動かない] キーマッピングでキーの同時押しをシミュレート。

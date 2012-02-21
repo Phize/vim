@@ -975,8 +975,8 @@ endfunction
 " 行をグローバルな'shiftwidth'分ずらす。
 nnoremap <silent> g>> :<C-u>call <SID>enableGlobalShiftwidth()<CR>>>:<C-u>call <SID>disableGlobalShiftwidth()<CR>
 nnoremap <silent> g<< :<C-u>call <SID>enableGlobalShiftwidth()<CR>>>:<C-u>call <SID>disableGlobalShiftwidth()<CR>
-vnoremap <silent> g>> :<C-u>call <SID>enableGlobalShiftwidth()<CR>:<C-u>'<,'>><CR>:<C-u>call <SID>disableGlobalShiftwidth()<CR>
-vnoremap <silent> g<< :<C-u>call <SID>enableGlobalShiftwidth()<CR>:<C-u>'<,'><<CR>:<C-u>call <SID>disableGlobalShiftwidth()<CR>
+vnoremap <silent> g> :<C-u>call <SID>enableGlobalShiftwidth()<CR>:<C-u>'<,'>><CR>:<C-u>call <SID>disableGlobalShiftwidth()<CR>
+vnoremap <silent> g< :<C-u>call <SID>enableGlobalShiftwidth()<CR>:<C-u>'<,'><<CR>:<C-u>call <SID>disableGlobalShiftwidth()<CR>
 
 " 挿入モードで行を'shiftwidth'分ずらす。
 " 通常の`<C-o>>>`、`<C-o><<`が遅いため上書き。

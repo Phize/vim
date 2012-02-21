@@ -831,7 +831,7 @@ nnoremap <silent> x "_x
 
 " 'virtualedit=all'のときにテキストの末尾にペースト。
 if has('virtualedit') && &virtualedit =~# '\<all\>'
-    nnoremap <silent> <expr> p (col('.') >= col('$') ? '$' : '') . 'p'
+    nnoremap <silent><expr> p (col('.') >= col('$') ? '$' : '') . 'p'
 endif
 
 " カーソル行の上・下に新しい行を作成。

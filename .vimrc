@@ -2107,6 +2107,9 @@ map [-op-]H <Plug>(operator-html-unescape)
 " ############################################################
 " コマンド {{{
 " ############################################################
+" ファイル名を変更。
+command! -bang -bar -nargs=1 -complete=file Rename file<bang> <args> | call delete(expand('#'))
+
 " コンパイラーを一時的に変更して`:command`を実行。
 function! s:makeWith(command, compiler)
     if exists('g:current_compiler')

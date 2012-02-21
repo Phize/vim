@@ -963,10 +963,27 @@ if !s:is_gui
     nnoremap <silent> [-option-]b :<C-u>call <SID>toggleBackground()<CR>
 endif
 
+" バッファーローカルな'shiftwidth'をグローバルな値に変更。
+function! s:enableGlobalShiftwidth()
+    let b:_global_shiftwidth_shiftwidth = &l:shiftwidth
+    let &l:shiftwidth = &g:shiftwidth
+endfunction
+" グローバルな値に変更したバッファーローカルな'shiftwidth'を元に戻す。
+function! s:disableGlobalShiftwidth()
+    let &l:shiftwidth = b:_global_shiftwidth_shiftwidth
+endfunction
+" 行をグローバルな'shiftwidth'分ずらす。
+nnoremap <silent> g>> :<C-u>call <SID>enableGlobalShiftwidth()<CR>>>:<C-u>call <SID>disableGlobalShiftwidth()<CR>
+nnoremap <silent> g<< :<C-u>call <SID>enableGlobalShiftwidth()<CR>>>:<C-u>call <SID>disableGlobalShiftwidth()<CR>
+vnoremap <silent> g>> :<C-u>call <SID>enableGlobalShiftwidth()<CR>:<C-u>'<,'>><CR>:<C-u>call <SID>disableGlobalShiftwidth()<CR>
+vnoremap <silent> g<< :<C-u>call <SID>enableGlobalShiftwidth()<CR>:<C-u>'<,'><<CR>:<C-u>call <SID>disableGlobalShiftwidth()<CR>
+
 " 挿入モードで行を'shiftwidth'分ずらす。
 " 通常の`<C-o>>>`、`<C-o><<`が遅いため上書き。
-inoremap <silent> <C-o>>> <C-t>
-inoremap <silent> <C-o><< <C-d>
+inoremap <silent> <C-o>>>  <C-t>
+inoremap <silent> <C-o><<  <C-d>
+inoremap <silent> <C-o>g>> <C-o>:<C-u>call <SID>enableGlobalShiftwidth()<CR><C-t><C-o>:<C-u>call <SID>disableGlobalShiftwidth()<CR>
+inoremap <silent> <C-o>g<< <C-o>:<C-u>call <SID>enableGlobalShiftwidth()<CR><C-d><C-o>:<C-u>call <SID>disableGlobalShiftwidth()<CR>
 
 " 挿入モード補完のポップアップメニューが表示されているときは候補を選択。
 " ポップアップメニューが表示されていないときは'<Tab>'を挿入。

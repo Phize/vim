@@ -1402,8 +1402,8 @@ endif
 " Align Them All! {{{
 " **************************************************
 " '<Space>'で整列。
-nnoremap <silent> <Leader>a<Space> :<C-u>Alignta <<0:0 \ <CR>
-vnoremap <silent> <Leader>a<Space> :<C-u>'<,'>Alignta <<0:0 \ <CR>
+nnoremap <silent> <Leader>a<Space> V:<C-u>substitute/ \+/ /eg<CR>:<C-u>nohlsearch<CR>V:<C-u>Alignta <<0:0 \ <CR>
+vnoremap <silent> <Leader>a<Space> :<C-u>'<,'>substitute/\%V \+/ /eg<CR>:<C-u>nohlsearch<CR>:<C-u>'<,'>Alignta <<0:0 \ <CR>
 
 " '='で整列。
 nnoremap <silent> <Leader>a= :<C-u>Alignta =<CR>

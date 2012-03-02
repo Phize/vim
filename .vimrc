@@ -825,9 +825,9 @@ noremap <silent> <C-b>      :<C-u>call <SID>smoothScroll('u', 2, 2)<CR>
 noremap <silent> <PageDown> :<C-u>call <SID>smoothScroll('d', 2, 2)<CR>
 noremap <silent> <PageUp>   :<C-u>call <SID>smoothScroll('u', 2, 2)<CR>
 
-" `x`、`x`で文字を消去専用レジスタに入れて削除。
+" `x`、`X`で文字を消去専用レジスタに入れて削除。
 nnoremap <silent> x "_x
-nnoremap <silent> x "_x
+nnoremap <silent> X "_X
 
 " 'virtualedit=all'のときにテキストの末尾にペースト。
 if has('virtualedit') && &virtualedit =~# '\<all\>'

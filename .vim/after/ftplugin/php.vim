@@ -21,7 +21,7 @@ setlocal commentstring=/*\ %s\ */   " コメント文字列。
 
 compiler php    " コンパイラーを設定。
 
-コンパイラーを一時的に変更して`:make`。
+" コンパイラーを一時的に変更して`:make`。
 nnoremap <silent><buffer> <LocalLeader>mz :<C-u>MakeWith phpcs_zend<CR>
 nnoremap <silent><buffer> <LocalLeader>mp :<C-u>MakeWith phpcs_pear<CR>
 

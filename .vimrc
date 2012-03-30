@@ -97,6 +97,7 @@ NeoBundle 'DrawIt'                                  " DrawIt                    
 NeoBundle 'Rykka/ColorV'                            " ColorV                         : 色を選択・取得・編集・一覧表示。
 NeoBundle 'tsukkee/lingr-vim.git'                   " Lingr                          : Lingrクライアント。
 " NeoBundle 'ChrisYip/Better-CSS-Syntax-for-Vim'  " Better CSS Syntax for Vim          : [他のプラグインと衝突] CSS2、HTML5、CSS3のシンタックスハイライト。
+NeoBundle 'potix2/vim-phprefactor'                  " phprefactor                    : PHP用のリファクタリングブラウザー。
 NeoBundle 'hail2u/vim-css3-syntax'                  " vim-css3-syntax                : CSS3のシンタックスハイライト。
 NeoBundle 'cakebaker/scss-syntax.vim'               " scss-syntax                    : SCSSのシンタックスハイライト。
 NeoBundle 'Phize/vim-rainbow_pairs'                 " Rainbow Pairs                  : 括弧等の組を構成する文字を強調表示。
@@ -1869,6 +1870,20 @@ autocmd vimrc_autocmd FileType css,scss call s:colorvPreview()
 nnoremap <silent><expr> <Leader>l
             \ (exists(':LingrLaunch') == 2 && exists(':LingrExit') != 2) ? ':<C-u>LingrLaunch<CR>' :
             \ exists(':LingrExit') == 2 ? ':<C-u>LingrExit<CR>' : ''
+" }}}
+
+" **************************************************
+" phprefactor
+" **************************************************
+
+let g:phprefactor_no_default_key_mappings = 1   " デフォルトのキーマッピングを使用しない。
+
+" ローカル変数をリファクタリング。
+" @TODO: プラグイン側に誤字があるため動作しない。
+" autocmd vimrc_autocmd FileType php
+"             \ nnoremap <LocalLeader>r <Plug>(phprefactor_rename_local_variable)
+autocmd vimrc_autocmd FileType php
+            \ nnoremap <LocalLeader>r :<C-u>PHPRefactor -mode rlv -i<CR>
 " }}}
 
 " **************************************************

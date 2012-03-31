@@ -84,6 +84,7 @@ NeoBundle 'Shougo/vimshell'                         " VimShell                  
 NeoBundle 'rson/vim-conque'                         " Conque                         : ターミナルエミュレーター。
 NeoBundle 'tpope/vim-git'                           " Git                            : Gitのシンタックスハイライト・インデントファイル・ファイルタイププラグイン。
 NeoBundle 'tpope/vim-fugitive'                      " Fugitive                       : Gitラッパー。
+NeoBundle 'mattn/webapi-vim'                        " webapi-vim                     : Web APIのVimインターフェイス。
 NeoBundle 'mattn/gist-vim'                          " Gist                           : Gistを作成・管理。
 NeoBundle 'Phize/QFixToggle'                        " QFixToggle                     : QuickFixウィンドウの表示をトグル。
 NeoBundle 'thinca/vim-qfreplace'                    " Qfreplace                      : クリックフィックスリスト内のテキストを置換。

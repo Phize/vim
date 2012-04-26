@@ -1598,7 +1598,7 @@ nnoremap <silent> <Leader>$rb :<C-u>VimShellInteractive irb<CR>
 
 " 現在の行・選択文字列をインタプリターに送信。
 nnoremap <silent> <Leader>$> <S-v>:VimShellSendString<CR>
-vnoremap <silent> <Leader>$> :<C-u>VimShellSendString<CR>
+vnoremap <silent> <Leader>$> :<C-u>'<,'>VimShellSendString<CR>
 " }}}
 
 " **************************************************

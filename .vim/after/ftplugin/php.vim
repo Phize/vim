@@ -24,10 +24,12 @@ compiler php    " コンパイラーを設定。
 " コンパイラーを一時的に変更して`:make`。
 nnoremap <silent><buffer> <LocalLeader>mz :<C-u>MakeWith phpcs_zend<CR>
 nnoremap <silent><buffer> <LocalLeader>mp :<C-u>MakeWith phpcs_pear<CR>
+nnoremap <silent><buffer> <LocalLeader>mw :<C-u>MakeWith phpcs_wp<CR>
 
 " コンパイラーを一時的に変更して`:lmake`。
 nnoremap <silent><buffer> <LocalLeader>lmz :<C-u>LMakeWith phpcs_zend<CR>
 nnoremap <silent><buffer> <LocalLeader>lmp :<C-u>LMakeWith phpcs_pear<CR>
+nnoremap <silent><buffer> <LocalLeader>lmw :<C-u>LMakeWith phpcs_wp<CR>
 
 let g:php_sql_query     = 1 " 文字列中のSQLをシンタックスハイライトを有効化。
 let g:php_htmlInStrings = 1 " 文字列中のHTMLをシンタックスハイライトを有効化。

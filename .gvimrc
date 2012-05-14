@@ -6,8 +6,9 @@ augroup END
 " ############################################################
 " システム設定 {{{
 " ############################################################
-set guioptions-=m   " メニューバーを非表示。
-set guioptions-=T   " ツールバーを非表示。
+set guioptions-=m       " メニューバーを非表示。
+set guioptions-=T       " ツールバーを非表示。
+set guioptions-=rRlLb   " スクロールバーを非表示。
 
 let g:wininfo_file = expand('$HOME/.vimwininfo')    " ウィンドウの状態を保存するファイル。
 

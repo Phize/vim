@@ -404,6 +404,7 @@ set title           " ウィンドウのタイトルを表示。
 " set titlestring=    " ウィンドウタイトル。
 
 " set showtabline=2   " タブページのラベルを常に表示。
+set showtabline=0   " タブページのラベルを表示しない。
 
 set numberwidth=1       " 行番号を表示するのに使用される最小の桁数。
 set number              " 行番号を表示。

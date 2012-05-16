@@ -1843,6 +1843,11 @@ nnoremap <expr> <Leader>db1 exists('*SetDrawIt') ? SetDrawIt('\|', '-', '+', '\'
 
 " 描画文字を変更(2)
 nnoremap <expr> <Leader>db2 exists('*SetDrawIt') ? SetDrawIt('\|', '=', '+', '\', '/', 'X', '*') : ''
+
+" cecutil.vim: ウィンドウ・バッファーの位置を保存・復元。
+" (Refソースのwordpress用キーマッピングとの衝突回避。)
+nmap <silent> [-ex-]swp <Plug>SaveWinPosn
+nmap <silent> [-ex-]rwp <Plug>RestoreWinPosn
 " }}}
 
 " **************************************************
@@ -2062,6 +2067,11 @@ vnoremap <silent> <C-k>m     :<C-u>call ref#jump('visual', 'man')<CR>
 nnoremap          <Leader>rrf :<C-u>Ref rfc<Space>
 nnoremap <silent> <C-k>rf     :<C-u>call ref#jump('normal', 'rfc')<CR>
 vnoremap <silent> <C-k>rf     :<C-u>call ref#jump('visual', 'rfc')<CR>
+
+" WordPress Codexを参照。
+nnoremap <Leader>rwp          :<C-u>Ref wordpress<Space>
+nnoremap <silent> <C-k>wp     :<C-u>call ref#jump('normal', 'wordpress')<CR>
+vnoremap <silent> <C-k>wp     :<C-u>call ref#jump('visual', 'wordpress')<CR>
 
 " ========================================
 " ref-sources {{{

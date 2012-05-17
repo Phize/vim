@@ -1082,6 +1082,7 @@ let g:neocomplcache_auto_completion_start_length   = 4                          
 " let g:neocomplcache_min_keyword_length             = 4                              " バッファーや辞書ファイル中で補完の対象となるキーワードの最小の長さ。
 " let g:neocomplcache_min_syntax_length              = 4                              " シンタックスファイル中で補完の対象となるキーワードの最小の長さ。
 " let g:neocomplcache_caching_limit_file_size        = 500000                         " ファイルをキャッシュするファイルサイズ。
+let g:neocomplcache_enable_prefetch                = 1                              " プリフェッチを有効化。
 let g:neocomplcache_snippets_dir                   = expand('$HOME/.vim/snippets')  " スニペット補完ファイルへのパス。
 
 " オムニ補完するためのキーワードパターン。

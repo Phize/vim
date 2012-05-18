@@ -65,7 +65,7 @@ NeoBundle 'tpope/vim-surround'                      " Surround                  
 NeoBundle 'tpope/vim-repeat'                        " Repeat                         : プラグインの関数を繰り返しコマンドに対応させる。
 NeoBundle 'Raimondi/delimitMate'                    " DelimitMate                    : 括弧等の組を構成する文字を自動で閉じる。
 NeoBundle 'chrisbra/SudoEdit.vim'                   " SudoEdit                       : sudoやsu等を利用してファイルを読み書き。
-NeoBundle 'godlygeek/csapprox'                      " CSApprox                       : GVim専用のカラースキームを端末用に変換。
+" NeoBundle 'godlygeek/csapprox'                      " CSApprox                       : [重い] GVim専用のカラースキームを端末用に変換。
 NeoBundle 'Gundo'                                   " Gundo                          : アンドゥツリーをグラフ表示。
 NeoBundle 'netrw.vim'                               " Netrw                          : ファイルエクスプローラー(ファイラー)。
 NeoBundle 'Shougo/vimfiler'                         " VimFiler                       : ファイルエクスプローラー(ファイラー)。
@@ -1242,28 +1242,28 @@ let g:delimitMate_balance_matchpairs = 1            " 閉じる文字の数に�
 " **************************************************
 " CSApprox {{{
 " **************************************************
-let g:CSApprox_use_showrgb = 1  " システムのRGBデータベースを使用。
+" let g:CSApprox_use_showrgb = 1  " システムのRGBデータベースを使用。
 
-" Molokai用のフック。
-let g:CSApprox_hook_molokai_post = [
-                \ 'highlight FoldColumn   ctermfg= 67',
-                \ 'highlight Folded       ctermfg= 67',
-                \ 'highlight VisualNOS    ctermfg=252 ctermbg=29',
-                \ 'highlight Visual       ctermfg=252 ctermbg=23',
-                \ 'highlight CursorLine   ctermbg=235',
-                \ 'highlight CursorColumn ctermbg=235',
-                \ 'highlight LineNr       ctermfg=250'
-            \ ]
+" " Molokai用のフック。
+" let g:CSApprox_hook_molokai_post = [
+                " \ 'highlight FoldColumn   ctermfg= 67',
+                " \ 'highlight Folded       ctermfg= 67',
+                " \ 'highlight VisualNOS    ctermfg=252 ctermbg=29',
+                " \ 'highlight Visual       ctermfg=252 ctermbg=23',
+                " \ 'highlight CursorLine   ctermbg=235',
+                " \ 'highlight CursorColumn ctermbg=235',
+                " \ 'highlight LineNr       ctermfg=250'
+            " \ ]
 
-" GUI版以外はCSApproxを読み込み。
-if !s:is_gui
-    " Vimの起動後、カラースキームの読み込み後にハイライトを更新。
-    autocmd vimrc_autocmd VimEnter,ColorScheme *        CSApprox!
-    " .vimrcの書き込み後にハイライトを更新。
-    autocmd vimrc_autocmd BufWritePost         $MYVIMRC CSApprox!
-else
-    let g:CSApprox_loaded = 1
-endif
+" " GUI版以外はCSApproxを読み込み。
+" if !s:is_gui
+    " " Vimの起動後、カラースキームの読み込み後にハイライトを更新。
+    " autocmd vimrc_autocmd VimEnter,ColorScheme *        CSApprox!
+    " " .vimrcの書き込み後にハイライトを更新。
+    " autocmd vimrc_autocmd BufWritePost         $MYVIMRC CSApprox!
+" else
+    " let g:CSApprox_loaded = 1
+" endif
 " }}}
 
 " **************************************************

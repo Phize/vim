@@ -1575,6 +1575,13 @@ if s:is_gui
     autocmd vimrc_autocmd BufWritePost $MYGVIMRC call s:updateIndentGuides()
 endif
 " }}}
+"
+" **************************************************
+" Hier {{{
+" **************************************************
+" Hierをトグル。
+nnoremap <silent><expr> [-option-]m g:hier_enabled ? ':<C-u>HierStop<CR>' : ':<C-u>HierStart<CR>'
+" }}}
 
 " **************************************************
 " VimShell {{{

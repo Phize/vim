@@ -33,6 +33,10 @@ nnoremap <silent><buffer> <LocalLeader>lmp :<C-u>LMakeWith phpcs_pear<CR>
 nnoremap <silent><buffer> <LocalLeader>lmw :<C-u>LMakeWith phpcs_wp<CR>
 nnoremap <silent><buffer> <LocalLeader>lms :<C-u>LMakeWith phpcs_symfony2<CR>
 
+" vim-php-namespace: use文を自動挿入。
+imap <silent><buffer> <C-_>u <C-o>:<C-u>call PhpInsertUse()<CR>
+map  <silent><buffer> <C-_>u :<C-u>call PhpInsertUse()<CR>
+
 let g:php_sql_query     = 1 " 文字列中のSQLをシンタックスハイライトを有効化。
 let g:php_htmlInStrings = 1 " 文字列中のHTMLをシンタックスハイライトを有効化。
 let g:php_noShortTags   = 1 " ショートタグを('<?'、'?>')をPHPとして扱わない。

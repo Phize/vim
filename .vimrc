@@ -93,6 +93,7 @@ NeoBundle 'othree/eregex.vim'                       " Eregex                    
 NeoBundle 'mattn/zencoding-vim'                     " ZenCoding                      : Zen Codingプラグイン。
 NeoBundle 'ujihisa/quickrun'                        " QuickRun                       : 編集中のファイルの全体または一部を実行。
 NeoBundle 'PDV--phpDocumentor-for-Vim'              " PDV                            : phpDocument形式のDocBlockコメントを生成。
+NeoBundle 'arnaud-lb/vim-php-namespace'             " vim-php-namespace              : PHPのuse文を自動挿入。
 " NeoBundle 'hallettj/jslint.vim'                 " JSLint                             : [重い] JavaScript LintをVimに統合。
 NeoBundle 'DrawIt'                                  " DrawIt                         : テキストで図を描画。
 NeoBundle 'Rykka/ColorV'                            " ColorV                         : 色を選択・取得・編集・一覧表示。

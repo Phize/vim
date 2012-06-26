@@ -22,16 +22,18 @@ setlocal commentstring=/*\ %s\ */   " コメント文字列。
 compiler php    " コンパイラーを設定。
 
 " コンパイラーを一時的に変更して`:make`。
-nnoremap <silent><buffer> <LocalLeader>mz :<C-u>MakeWith phpcs_zend<CR>
-nnoremap <silent><buffer> <LocalLeader>mp :<C-u>MakeWith phpcs_pear<CR>
-nnoremap <silent><buffer> <LocalLeader>mw :<C-u>MakeWith phpcs_wp<CR>
-nnoremap <silent><buffer> <LocalLeader>ms :<C-u>MakeWith phpcs_symfony2<CR>
+nnoremap <silent><buffer> <LocalLeader>mz  :<C-u>MakeWith phpcs_zend<CR>
+nnoremap <silent><buffer> <LocalLeader>mpe :<C-u>MakeWith phpcs_pear<CR>
+nnoremap <silent><buffer> <LocalLeader>mw  :<C-u>MakeWith phpcs_wp<CR>
+nnoremap <silent><buffer> <LocalLeader>ms  :<C-u>MakeWith phpcs_symfony2<CR>
+nnoremap <silent><buffer> <LocalLeader>mps :<C-u>MakeWith phpcs_psr<CR>
 
 " コンパイラーを一時的に変更して`:lmake`。
-nnoremap <silent><buffer> <LocalLeader>lmz :<C-u>LMakeWith phpcs_zend<CR>
-nnoremap <silent><buffer> <LocalLeader>lmp :<C-u>LMakeWith phpcs_pear<CR>
-nnoremap <silent><buffer> <LocalLeader>lmw :<C-u>LMakeWith phpcs_wp<CR>
-nnoremap <silent><buffer> <LocalLeader>lms :<C-u>LMakeWith phpcs_symfony2<CR>
+nnoremap <silent><buffer> <LocalLeader>lmz  :<C-u>LMakeWith phpcs_zend<CR>
+nnoremap <silent><buffer> <LocalLeader>lmpe :<C-u>LMakeWith phpcs_pear<CR>
+nnoremap <silent><buffer> <LocalLeader>lmw  :<C-u>LMakeWith phpcs_wp<CR>
+nnoremap <silent><buffer> <LocalLeader>lms  :<C-u>LMakeWith phpcs_symfony2<CR>
+nnoremap <silent><buffer> <LocalLeader>lmps :<C-u>LMakeWith phpcs_psr<CR>
 
 " vim-php-namespace: use文を自動挿入。
 imap <silent><buffer> <C-_>u <C-o>:<C-u>call PhpInsertUse()<CR>

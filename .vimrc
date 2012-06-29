@@ -91,6 +91,7 @@ NeoBundle 'thinca/vim-qfreplace'                    " Qfreplace                 
 NeoBundle 'othree/eregex.vim'                       " Eregex                         : 拡張正規表現をVimの正規方言に変換。
 " NeoBundle 'kana/vim-arpeggio'                   " Arpeggio                           : [動かない] キーマッピングでキーの同時押しをシミュレート。
 NeoBundle 'mattn/zencoding-vim'                     " ZenCoding                      : Zen Codingプラグイン。
+NeoBundle 'myusuf3/numbers.vim'                     " numbers.vim                    : 行番号表示を自動切り替え。
 NeoBundle 'ujihisa/quickrun'                        " QuickRun                       : 編集中のファイルの全体または一部を実行。
 NeoBundle 'PDV--phpDocumentor-for-Vim'              " PDV                            : phpDocument形式のDocBlockコメントを生成。
 NeoBundle 'arnaud-lb/vim-php-namespace'             " vim-php-namespace              : PHPのuse文を自動挿入。
@@ -1811,6 +1812,12 @@ let g:user_zen_settings = {
                     \ 'indentation' : '    '
                 \ }
             \ }
+" }}}
+
+" **************************************************
+" numbers.vim {{{
+" **************************************************
+nnoremap <silent> [-option-]n :<C-u>NumbersToggle<CR>
 " }}}
 
 " **************************************************

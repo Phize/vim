@@ -2009,6 +2009,9 @@ nnoremap <silent> [-unite-]pl :<C-u>Unite -buffer-name=neobundle neobundle/log<C
 " プラグインをインストール(NeoBundle)。
 nnoremap <silent> [-unite-]pi :<C-u>Unite -buffer-name=neobundle neobundle/install<CR>
 
+" プラグインをアップデート(NeoBundle)。
+nnoremap <silent> [-unite-]pu :<C-u>Unite -buffer-name=neobundle neobundle/update<CR>
+
 " アウトライン一覧(unite-outline)。
 nnoremap <silent> [-unite-]o :<C-u>Unite -buffer-name=outline outline<CR>
 

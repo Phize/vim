@@ -1853,6 +1853,16 @@ autocmd vimrc_autocmd FileType php
 " }}}
 
 " **************************************************
+" vim-php-namespace {{{
+" **************************************************
+" use文を自動挿入。
+autocmd vimrc_autocmd FileType php
+            \ noremap  <silent><buffer> <C-x>u :<C-u>call PhpInsertUse()<CR> |
+            \ inoremap <silent><buffer> <C-x>u <C-o>:<C-u>call PhpInsertUse()<CR>
+
+" }}}
+
+" **************************************************
 " DrawIt {{{
 " **************************************************
 " 描画文字を変更(1)

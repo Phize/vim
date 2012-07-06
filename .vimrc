@@ -96,6 +96,7 @@ NeoBundle 'ujihisa/quickrun'                        " QuickRun                  
 NeoBundle 'PDV--phpDocumentor-for-Vim'              " PDV                            : phpDocument形式のDocBlockコメントを生成。
 NeoBundle 'arnaud-lb/vim-php-namespace'             " vim-php-namespace              : PHPのuse文を自動挿入。
 " NeoBundle 'hallettj/jslint.vim'                 " JSLint                             : [重い] JavaScript LintをVimに統合。
+NeoBundle 'Rykka/riv.vim'                           " Riv                            : reStructuredTextドキュメントを管理。
 NeoBundle 'DrawIt'                                  " DrawIt                         : テキストで図を描画。
 NeoBundle 'Rykka/ColorV'                            " ColorV                         : 色を選択・取得・編集・一覧表示。
 NeoBundle 'tsukkee/lingr-vim.git'                   " Lingr                          : Lingrクライアント。
@@ -1860,6 +1861,12 @@ autocmd vimrc_autocmd FileType php
             \ noremap  <silent><buffer> <C-x>u :<C-u>call PhpInsertUse()<CR> |
             \ inoremap <silent><buffer> <C-x>u <C-o>:<C-u>call PhpInsertUse()<CR>
 
+" }}}
+
+" **************************************************
+" Riv {{{
+" **************************************************
+" @TODO: 設定を追加。
 " }}}
 
 " **************************************************

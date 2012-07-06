@@ -1848,7 +1848,7 @@ let g:loaded_quicklaunch                  = 1   " QuickLaunchを読み込まな�
 " PHPでDocBlockコメントを挿入。
 autocmd vimrc_autocmd FileType php
             \ nnoremap <silent><buffer> <C-p> :<C-u>call PhpDocSingle()<CR> |
-            \ inoremap <silent><buffer> <C-p> <Esc>:<C-u>call PhpDocSingle()<CR>i |
+            \ inoremap <silent><buffer> <C-p> <C-o>:<C-u>call PhpDocSingle()<CR>i |
             \ vnoremap <silent><buffer> <C-p> :<C-u>call PhpDocRange()<CR>
 " }}}
 

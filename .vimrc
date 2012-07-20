@@ -917,7 +917,9 @@ nnoremap <silent> [-ex-]lw  :<C-u>lwindow<CR>
 
 " コンパイル。
 nnoremap <silent> [-ex-]mak  :<C-u>make<CR>
+nnoremap <silent> [-ex-]mk   :<C-u>make<CR>
 nnoremap <silent> [-ex-]lmak :<C-u>lmake<CR>
+nnoremap <silent> [-ex-]lmk  :<C-u>lmake<CR>
 
 " 差分モード。
 nnoremap <silent> d< do

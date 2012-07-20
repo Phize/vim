@@ -1859,8 +1859,8 @@ autocmd vimrc_autocmd FileType php
 " **************************************************
 " use文を自動挿入。
 autocmd vimrc_autocmd FileType php
-            \ noremap  <silent><buffer> <C-x>u :<C-u>call PhpInsertUse()<CR> |
-            \ inoremap <silent><buffer> <C-x>u <C-o>:<C-u>call PhpInsertUse()<CR>
+            \ noremap  <silent><buffer> <C-_>u :<C-u>call PhpInsertUse()<CR> |
+            \ inoremap <silent><buffer> <C-_>u <C-o>:<C-u>call PhpInsertUse()<CR>
 
 " }}}
 

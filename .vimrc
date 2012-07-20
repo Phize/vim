@@ -876,10 +876,18 @@ nnoremap <silent> [-ex-]to :<C-u>tabonly<CR>
 nnoremap <silent> [-ex-]ts :<C-u>tabs<CR>
 
 " タグ。
-nnoremap <silent> <C-]>]     <C-]>
+nnoremap <silent> <C-]>]     g<C-]>
 nnoremap <silent> <C-]><C-]> <C-]>
-nnoremap <silent> <C-]>[     <C-T>
-nnoremap <silent> <C-]><C-[> <C-T>
+nnoremap <silent> <C-]>[     <C-t>
+nnoremap <silent> <C-]><C-[> <C-t>
+nnoremap <silent> <C-]><     <C-t>
+nnoremap <silent> <C-]>>     :<C-u>tag<CR>
+nnoremap <silent> <C-]>n     :<C-u>tnext<CR>
+nnoremap <silent> <C-]>p     :<C-u>tprevious<CR>
+nnoremap <silent> <C-]>N     :<C-u>tNext<CR>
+nnoremap <silent> <C-]>r     :<C-u>trewind<CR>
+nnoremap <silent> <C-]>f     :<C-u>tfirst<CR>
+nnoremap <silent> <C-]>l     :<C-u>tlast<CR>
 
 " QuickFixリスト。
 nnoremap <silent> [-ex-]cn  :<C-u>cnext<CR>

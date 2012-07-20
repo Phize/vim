@@ -95,6 +95,7 @@ NeoBundle 'myusuf3/numbers.vim'                     " numbers.vim               
 NeoBundle 'ujihisa/quickrun'                        " QuickRun                       : 編集中のファイルの全体または一部を実行。
 NeoBundle 'PDV--phpDocumentor-for-Vim'              " PDV                            : phpDocument形式のDocBlockコメントを生成。
 NeoBundle 'arnaud-lb/vim-php-namespace'             " vim-php-namespace              : PHPのuse文を自動挿入。
+NeoBundle 'docteurklein/vim-symfony'                " vim-symfony                    : Symfonyのルーティング、DIコンテナーを補完。
 " NeoBundle 'hallettj/jslint.vim'                 " JSLint                             : [重い] JavaScript LintをVimに統合。
 NeoBundle 'Rykka/riv.vim'                           " Riv                            : reStructuredTextドキュメントを管理。
 NeoBundle 'DrawIt'                                  " DrawIt                         : テキストで図を描画。
@@ -1861,6 +1862,16 @@ autocmd vimrc_autocmd FileType php
             \ noremap  <silent><buffer> <C-x>u :<C-u>call PhpInsertUse()<CR> |
             \ inoremap <silent><buffer> <C-x>u <C-o>:<C-u>call PhpInsertUse()<CR>
 
+" }}}
+
+" **************************************************
+" vim-symfony {{{
+" **************************************************
+let g:symfony_enable_shell_mapping = 0    " Symfonyコンソールのキーマッピングを無効化。
+
+" Symfonyコンソールを起動。
+autocmd vimrc_autocmd FileType php
+            \ noremap  <silent><buffer> <LocalLeader>$s :<C-u>execute ":!"g:symfony_enable_shell_cmd<CR>
 " }}}
 
 " **************************************************

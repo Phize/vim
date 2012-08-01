@@ -776,8 +776,8 @@ noremap [-option-] <Nop>
 map     <Space>    [-option-]
 
 " `f`、`t`、`F`、`T`を繰り返し。
-nnoremap <silent> [-ex-]; ;
-nnoremap <silent> [-op-], ,
+noremap <silent> [-ex-]; ;
+noremap <silent> [-op-], ,
 
 " `j`、`k`で表示行に移動。
 nnoremap <silent> <Down> gj

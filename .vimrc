@@ -1877,6 +1877,12 @@ autocmd vimrc_autocmd FileType php
 " }}}
 
 " **************************************************
+" vim-php-namespace {{{
+" **************************************************
+let g:tagbar_phpctags_bin = expand('$HOME/.bundle/phpctags/phpctags')
+" }}}
+
+" **************************************************
 " vim-symfony {{{
 " **************************************************
 let g:symfony_enable_shell_mapping = 0    " Symfonyコンソールのキーマッピングを無効化。

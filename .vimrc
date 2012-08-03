@@ -95,6 +95,7 @@ NeoBundle 'myusuf3/numbers.vim'                     " numbers.vim               
 NeoBundle 'ujihisa/quickrun'                        " QuickRun                       : 編集中のファイルの全体または一部を実行。
 NeoBundle 'PDV--phpDocumentor-for-Vim'              " PDV                            : phpDocument形式のDocBlockコメントを生成。
 NeoBundle 'arnaud-lb/vim-php-namespace'             " vim-php-namespace              : PHPのuse文を自動挿入。
+NeoBundle 'techlivezheng/phpctags'                  " phpctags                       : PHPのctagsインデックスファイルジェネレーター。
 NeoBundle 'docteurklein/vim-symfony'                " vim-symfony                    : Symfonyのルーティング、DIコンテナーを補完。
 " NeoBundle 'hallettj/jslint.vim'                 " JSLint                             : [重い] JavaScript LintをVimに統合。
 NeoBundle 'Rykka/riv.vim'                           " Riv                            : reStructuredTextドキュメントを管理。

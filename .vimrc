@@ -594,9 +594,9 @@ set scrolloff=999   " カーソル行を常にウィンドウの中央に表示�
 " カーソルの右または左に表示する最小の行数。
 set sidescrolloff=999   " カーソル列を常にウィンドウの中央に表示。
 
-set colorcolumn=80  " 強調表示する列。
-set cursorline      " カーソル行を強調。
-set cursorcolumn    " カーソル桁を強調。
+set colorcolumn=80,120  " 強調表示する列。
+set cursorline          " カーソル行を強調。
+set cursorcolumn        " カーソル桁を強調。
 
 " カーソル行とカーソル桁の強調用の自動コマンドグループ。
 augroup vimrc_highlightCursor

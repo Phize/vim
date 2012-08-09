@@ -104,6 +104,7 @@ NeoBundle 'DrawIt'                                  " DrawIt                    
 NeoBundle 'Rykka/ColorV'                            " ColorV                         : 色を選択・取得・編集・一覧表示。
 NeoBundle 'tsukkee/lingr-vim.git'                   " Lingr                          : Lingrクライアント。
 " NeoBundle 'ChrisYip/Better-CSS-Syntax-for-Vim'  " Better CSS Syntax for Vim          : [他のプラグインと衝突] CSS2、HTML5、CSS3のシンタックスハイライト。
+NeoBundle 'miripiruni/CSScomb-for-Vim'              " CSScomb for Vim                : CSSプロパティを並べ替え。
 NeoBundle 'beyondwords/vim-twig'                    " vim-twig                       : Twigのシンタックスハイライト。
 NeoBundle 'potix2/vim-phprefactor'                  " phprefactor                    : PHP用のリファクタリングブラウザー。
 NeoBundle 'hail2u/vim-css3-syntax'                  " vim-css3-syntax                : CSS3のシンタックスハイライト。

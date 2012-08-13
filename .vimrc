@@ -892,6 +892,11 @@ nnoremap <silent> <C-]>r     :<C-u>trewind<CR>
 nnoremap <silent> <C-]>f     :<C-u>tfirst<CR>
 nnoremap <silent> <C-]>l     :<C-u>tlast<CR>
 
+" 折り畳み
+nnoremap <silent> z[ [z
+nnoremap <silent> z] ]z
+
+
 " QuickFixリスト。
 nnoremap <silent> [-ex-]cn  :<C-u>cnext<CR>
 nnoremap <silent> [-ex-]cp  :<C-u>cprevious<CR>

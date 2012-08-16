@@ -1991,7 +1991,7 @@ call unite#custom_default_action('bookmark/directory', 'vimfiler')
 
 " `X`でアクションを選択。
 autocmd vimrc_autocmd FileType unite
-            \ nmap <silent><buffer> X <Plug>(unite_choose_action) |
+            \ nmap <silent><buffer> X <Plug>(unite_choose_action)|
             \ imap <silent><buffer> X <Plug>(unite_choose_action)
 
 " '<Esc><Esc>'でUniteを閉じる。

@@ -1958,11 +1958,9 @@ nnoremap <silent><expr> <Leader>l
 let g:phprefactor_no_default_key_mappings = 1   " デフォルトのキーマッピングを使用しない。
 
 " ローカル変数をリファクタリング。
-" @TODO: プラグイン側に誤字があるため動作しない。
-" autocmd vimrc_autocmd FileType php
-"             \ nnoremap <LocalLeader>rlv <Plug>(phprefactor_rename_local_variable)
 autocmd vimrc_autocmd FileType php
-            \ nnoremap <LocalLeader>rlv :<C-u>PHPRefactor -mode rlv -i<CR>
+            \ nmap <LocalLeader>rr <Plug>(phprefactor_rename_local_variable)|
+            \ vmap <LocalLeader>rv <Plug>(phprefactor_introduce_local_variable)
 " }}}
 
 " **************************************************

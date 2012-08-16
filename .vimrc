@@ -125,6 +125,7 @@ NeoBundle 'ujihisa/unite-colorscheme'   " unite-colorscheme: カラースキー�
 NeoBundle 'tsukkee/unite-help'          " unite-help       : ヘルプを一覧表示(Uniteソース)。
 NeoBundle 'tsukkee/unite-tag'           " unite-tag        : タグを一覧表示(Uniteソース)。
 NeoBundle 'thinca/vim-unite-history'    " vim-unite-history: コマンドと検索の履歴を一覧表示(Uniteソース)。
+NeoBundle 'Shougo/unite-session'        " unite-session    : Vimのセッションを管理(Uniteソース)。
 " }}}
 
 " ========================================

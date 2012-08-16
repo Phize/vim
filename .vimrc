@@ -1308,10 +1308,11 @@ let g:netrw_liststyle = 3   " ファイル一覧をツリー表示。
 " **************************************************
 " VimFiler {{{
 " **************************************************
-let g:vimfiler_as_default_explorer  = 1             " Netrwの代わりにVimFilerを使用。
-" let g:vimfiler_split_rule           = 'rightbelow'  " ウィンドウを右・下に開く。
-" let g:vimfiler_safe_mode_by_default = 0             " セーフモードを無効化。
-let g:vimfiler_tree_leaf_icon       = ' '           " ツリーの枝のアイコン。
+let g:vimfiler_as_default_explorer     = 1             " Netrwの代わりにVimFilerを使用。
+" let g:vimfiler_split_rule              = 'rightbelow'  " ウィンドウを右・下に開く。
+" let g:vimfiler_safe_mode_by_default    = 0             " セーフモードを無効化。
+let g:vimfiler_tree_leaf_icon          = ' '           " ツリーの枝のアイコン。
+let g:vimfiler_tree_readonly_file_icon = '-'           " 読込専用ファイルのアイコン。
 
 if &encoding == 'utf-8'
     let g:vimfiler_tree_opened_icon = '▾'   " 開かれたディレクトリツリーのアイコン。

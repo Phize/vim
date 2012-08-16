@@ -93,6 +93,7 @@ NeoBundle 'othree/eregex.vim'                       " Eregex                    
 NeoBundle 'mattn/zencoding-vim'                     " ZenCoding                      : Zen Codingプラグイン。
 NeoBundle 'myusuf3/numbers.vim'                     " numbers.vim                    : 行番号表示を自動切り替え。
 NeoBundle 'ujihisa/quickrun'                        " QuickRun                       : 編集中のファイルの全体または一部を実行。
+NeoBundle 'austintaylor/vim-commaobject'            " Comma Object                   : カンマ区切りの文字列をテキストオブジェクトとして扱う。
 NeoBundle 'PDV--phpDocumentor-for-Vim'              " PDV                            : phpDocument形式のDocBlockコメントを生成。
 NeoBundle 'arnaud-lb/vim-php-namespace'             " vim-php-namespace              : PHPのuse文を自動挿入。
 NeoBundle 'techlivezheng/phpctags'                  " phpctags                       : PHPのctagsインデックスファイルジェネレーター。
@@ -1986,6 +1987,9 @@ let g:unite_source_directory_mru_limit       = 1000 " 最近使用したディ�
 let g:unite_source_history_yank_enable       = 1    " unite-source-history/yankを有効化。
 let g:unite_source_history_yank_limit        = 1000 " ヤンク履歴を保存する最大数。
 let g:unite_kind_jump_list_after_jump_scroll = 50   " unite-kind-jump_listでのジャンプ後のカーソル位置をウィンドウ中央にする。
+
+" ブックマークディレクトリをVimFilerで開く。
+call unite#custom_default_action('bookmark/directory', 'vimfiler')
 
 " `X`でアクションを選択。
 autocmd vimrc_autocmd FileType unite
